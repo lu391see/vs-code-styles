@@ -1,8 +1,8 @@
 {
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.formatOnType": true
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  "python.terminal.activateEnvironment": false,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer",
     "editor.formatOnType": true
@@ -20,7 +20,10 @@
   "git.confirmSync": false,
   "git.openRepositoryInParentFolders": "always",
   "github.copilot.enable": {
-    "*": false
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
   },
   "gitlens.graph.dateStyle": "absolute",
   "vim.leader": "<Space>",
@@ -126,7 +129,6 @@
     }
   ],
   "breadcrumbs.enabled": false,
-  "window.menuBarVisibility": "toggle",
   "workbench.colorTheme": "Subtle Pink",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.iconTheme": "material-icon-theme",
@@ -135,5 +137,8 @@
   },
   "editor.stickyScroll.enabled": false,
   "editor.renderWhitespace": "none",
-  "workbench.activityBar.location": "hidden"
+  "codeium.enableConfig": {
+    "*": false
+  },
+  "window.menuBarVisibility": "toggle"
 }
